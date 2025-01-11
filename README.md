@@ -7,7 +7,11 @@ And you're good to go! 🙂
 
 ---
 
-<video src="https://github.com/criticslikerain/Nathan-AI/issues/1#issue-2781774659"> 
+
+<div>
+    <video src="https://github.com/user-attachments/assets/02a38afa-cfef-4a7e-8d82-0124841c24fd" loop autoplay></video>
+</div>
+
 
 ---
 
