@@ -7,6 +7,10 @@ And you're good to go! 🙂
 
 ---
 
+<video src="https://github.com/criticslikerain/Nathan-AI/issues/1#issue-2781774659"> 
+
+---
+
 ## **Commands** 📜
 ### **Personal Interaction**
 - **Format**: `_nat your text here`  
