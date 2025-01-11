@@ -1,0 +1,48 @@
+{
+  "name": "Nguyễn Phạm Minh Tuấn",
+  "ID": "1091264685",
+  "pet": [
+    {
+      "name": "Groudon",
+      "type": "Ground",
+      "HP": 100,
+      "Attack": 150,
+      "Defense": 140,
+      "Speed": 90,
+      "coins": 48000,
+      "skill": [
+        "Drought"
+      ],
+      "images": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/383.png"
+    },
+    {
+      "name": "Dialga",
+      "type": "Steel",
+      "HP": 100,
+      "Attack": 120,
+      "Defense": 120,
+      "Speed": 90,
+      "coins": 43000,
+      "skill": [
+        "Pressure",
+        "Telepathy"
+      ],
+      "images": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/483.png"
+    }
+  ],
+  "foods": [
+    {
+      "name": "𝐌𝐨𝐮𝐭𝐡 𝐖𝐚𝐭𝐞𝐫𝐢𝐧𝐠 𝐃𝐢𝐩 𝐚 𝐥𝐚 𝐂𝐮𝐛𝐞 �",
+      "type": "Electric",
+      "HP": "12",
+      "Attack": "12",
+      "Defense": "12",
+      "Speed": "12"
+    }
+  ],
+  "solo": {
+    "win": 0,
+    "lose": 0,
+    "draw": 0
+  }
+}

@@ -1,0 +1,66 @@
+const fs = global.nodemodule["fs-extra"];
+module.exports.config = {
+  name: "goibot",
+  version: "1.0.4",
+  hasPermssion: 0,
+  credits: "Nathaniel",
+  description: "goibot",
+  commandCategory: "admin",
+  usages: "admin",
+  cooldowns: 6,
+};
+module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
+  var { threadID, messageID, reason } = event;
+  const moment = require("moment-timezone");
+  const time = moment.tz("Asia/Manila").format("HH:MM:ss L");
+  var idgr = `${event.threadID}`;
+  var id = event.senderID;
+  var name = await Users.getNameUser(event.senderID);
+
+  var tl = ["Ittuu🤏 si shram ker Lya kro bot bot krty wqt 🙂 💔✨⚠️†", "Bandi hoti tw us ko choti choti 2 pOniyAn krta🙂👩‍🦯👩‍🦯", "Ary Yahin Hon Jan😗", "jiee Shona 😍", "Love you", "Miss YoU NaW Inna", "Inna Sarra🤏", "OkkaY Babbu", "😁Smile I am Taking Selfy✌️🤳", "🥺Jan nahi kehna to men naraz ho jana he", "😙Me sabko block karne jarha hon Tumhri waja sy", "Main ap ki ami ko btaou ga ap Facebook use kerty ho 😂", "#__LaLa__LaLa__Lori #__Koi___Chori__Set__Ni__HoRRI" ,"Block Your ‘’ gf ‘’ And Purpose me 🙂💔" ,"K0i Perp0Se Hi Krd0 Perm0te T0 hm PhlY hi HaiN 🙂"];
+  var rand = tl[Math.floor(Math.random() * tl.length)]
+
+  if ((event.body.toLowerCase() == "good night") || (event.body.toLowerCase() == "gn")) {
+     return api.sendMessage("️❤️ Good Night too darling 🥰", threadID, messageID);
+   };
+
+   if ((event.body.toLowerCase() == "good morning") || (event.body.toLowerCase() == "gm")) {
+     return api.sendMessage("❤️ Good Morning too baby 🥰", threadID);
+   };
+
+  
+   if ((event.body.toLowerCase() == "hi") || (event.body.toLowerCase() == "hello")) {
+     return api.sendMessage("Next Hi/Hello nhi Assalamualaikum Bola kro Okay 💖🤍✨", threadID);
+   };
+
+  
+   if ((event.body.toLowerCase() == "assalam u alaikum") || (event.body.toLowerCase() == "assalam o laikum")) {
+     return api.sendMessage("❤️وَعَلَيْكُم السَّلَام وَرَحْمَةُ اَللهِ", threadID);
+   };
+
+  
+   if ((event.body.toLowerCase() == "🙄") || (event.body.toLowerCase() == "🙄🙄")) {
+     return api.sendMessage("uper kiya bey 🙄😈", threadID);
+   };
+
+  
+   if ((event.body.toLowerCase() == "😒") || (event.body.toLowerCase() == "😒😒")) {
+     return api.sendMessage("Ye nakhre kahen r ja dekha bey😈", threadID);
+   };
+
+  
+   if ((event.body.toLowerCase() == "bye") || (event.body.toLowerCase() == "by")) {
+     return api.sendMessage("BYe Allah Hafiz ❤️ ", threadID);
+   };
+   mess = "{name}"
+  
+  if (event.body.indexOf("bot") == 0 || (event.body.indexOf("Bot") == 0)) {
+    var msg = {
+      body: `💋${name}💋, ${rand}`
+    }
+    return api.sendMessage(msg, threadID, messageID);
+  };
+
+}
+
+module.exports.run = function({ api, event, client, __GLOBAL }) { }
